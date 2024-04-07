@@ -1,0 +1,52 @@
+create table buku (
+	id serial primary key NOT NULL,
+	judul varchar NOT NULL,
+	pengarang varchar NOT NULL,
+	penerbit varchar NOT NULL,
+	tahun_terbit varchar NOT NULL,
+	deskripsi text NOT NULL,
+	rak_id int default 0,
+	stok int NOT NULL
+);
+
+create table mahasiswa (
+	id serial primary key NOT NULL,
+	nim varchar NOT NULL,
+	nama varchar NOT NULL,
+	nohp varchar NOT NULL,
+	alamat text NOT NULL,
+	status_mahasiswa varchar NOT NULL
+);
+
+create table rak (
+	id serial primary key NOT NULL,
+	nama_rak varchar NOT NULL,
+	deskripsi text NOT NULL
+);
+
+create table transaksi_peminjaman (
+	id serial primary key NOT NULL,
+	nim varchar NOT NULL,
+	buku_id int NOT NULL,
+	status varchar NOT NULL,
+	tanggal_peminjaman date NOT NULL,
+	batas_tanggal_pinjam date NOT NULL,
+	tanggal_perpanjang date,
+	tanggal_kembali date
+);
+
+create table history_peminjaman(
+	id serial primary key NOT NULL,
+	nim varchar NOT NULL,
+	nama varchar NOT NULL,
+	buku_id int NOT NULL,
+	buku varchar NOT NULL,
+	tanggal_peminjaman date NOT NULL,
+	tanggal_kembali date NOT NULL
+);
+
+
+
+
+
+
