@@ -29,7 +29,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Rak Buku</a>
+              <router-link class="nav-link" :to="{ name: 'bookshelf.index' }"
+                >Rak Buku</router-link
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Mahasiswa</a>

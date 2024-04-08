@@ -4,7 +4,7 @@
       <div class="col-12">
         <div class="card">
           <div class="card-body">
-            <span class="title-header">Create</span>
+            <span class="title-header">Update</span>
             <!-- Form Tambah -->
             <section class="my-3">
               <div class="row">
