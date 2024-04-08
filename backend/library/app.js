@@ -4,6 +4,9 @@ const express = require("express");
 // body parser digunakan untuk menangani body pada permintaan HTTP
 const bodyParser = require("body-parser");
 
+// cors
+const cors = require("cors");
+
 // controller
 const bookController = require("./src/controllers/book");
 const bookShelfController = require("./src/controllers/bookshelf");
@@ -12,6 +15,8 @@ const transactionController = require("./src/controllers/transaction");
 
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 // hasil HTTP parse to JSON
 app.use(bodyParser.json());
