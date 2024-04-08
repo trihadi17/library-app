@@ -8,3 +8,7 @@ Proyek ini menggunakan express.js sebagai backend dan vue.js sebagai frontend,
 - PostgreSQL
 - Postman (API Testing)
 - Vscode (Optional)
+
+### **Catatan**
+- Backend (Sudah selesai)
+- Frontend (Belum selesai)
