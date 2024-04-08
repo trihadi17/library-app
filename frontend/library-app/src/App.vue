@@ -20,12 +20,7 @@
           <ul class="navbar-nav">
             <li class="nav-item active">
               <router-link class="nav-link" :to="{ name: 'dashboard' }"
-                >History Peminjaman</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" :to="{ name: 'book.index' }"
-                >Buku</router-link
+                >History</router-link
               >
             </li>
             <li class="nav-item">
@@ -34,7 +29,14 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Mahasiswa</a>
+              <router-link class="nav-link" :to="{ name: 'book.index' }"
+                >Buku</router-link
+              >
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'student.index' }"
+                >Mahasiswa</router-link
+              >
             </li>
           </ul>
         </div>

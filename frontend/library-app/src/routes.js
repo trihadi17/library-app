@@ -39,4 +39,21 @@ export const routes = [
     name: "bookshelf.update",
     component: () => import("./components/pages/rak/Update.vue"),
   },
+
+  // mahasiswa
+  {
+    path: "/student",
+    name: "student.index",
+    component: () => import("./components/pages/mahasiswa/Student.vue"),
+  },
+  {
+    path: "/student/create",
+    name: "student.create",
+    component: () => import("./components/pages/mahasiswa/Create.vue"),
+  },
+  {
+    path: "/student/update/:id",
+    name: "student.update",
+    component: () => import("./components/pages/mahasiswa/Update.vue"),
+  },
 ];
