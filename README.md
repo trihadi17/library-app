@@ -11,4 +11,4 @@ Proyek ini menggunakan express.js sebagai backend dan vue.js sebagai frontend,
 
 ### **Catatan**
 - Backend (Sudah selesai)
-- Frontend (Belum selesai)
+- Frontend (History Pinjam Buku & CRUD Buku, Rak Buku, Mahasiswa SELESAI), Proses Transaksi Pinjam Belum
